@@ -1,14 +1,16 @@
-// export default {
-//   a: 1
-// }
+import hello from 'hello-npm-pkg'
+import { cloneDeep } from 'lodash';
 interface TestInterface {
   name: string
 }
 
-export const b: TestInterface = {
-  name: '2'
+const a = [1, 2, 3]
+let b = cloneDeep(a)
+
+export default b
+
+export const c: TestInterface = {
+  name: 'c'
 }
 
-export default {
-  name: '1'
-}
+export const d = hello
